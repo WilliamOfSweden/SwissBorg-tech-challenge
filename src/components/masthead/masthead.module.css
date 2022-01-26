@@ -8,3 +8,10 @@
   height: 900px;
   position: relative;
 }
+
+.wrapper {
+  color: var(--color-text-inverse);
+  position: relative;
+  text-align: center;
+  z-index: 10;
+}

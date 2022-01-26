@@ -3,12 +3,16 @@ import React from 'react'
 import Layout from '../layout'
 import * as mastheadStyles from './masthead.module.css'
 import Heading from './heading/'
+import Subheading from './subheading/'
 import BgImage from './bgImage/'
 
 const Masthead = () => (
   <Layout>
     <section className={mastheadStyles.masthead}>
-      <Heading />
+      <div className={`${mastheadStyles.wrapper} container`}>
+        <Heading />
+        <Subheading />
+      </div>
       <BgImage />
     </section>
   </Layout>

@@ -23,3 +23,8 @@ h1 {
   font-size: 3.8rem;
   font-weight: 600;
 }
+
+.container {
+  width: min(1180px, 100% - 2rem);
+  margin-inline: auto;
+}
