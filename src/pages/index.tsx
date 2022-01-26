@@ -1,5 +1,7 @@
 import React from 'react'
 
-const IndexPage = () => <div>Hello world!</div>
+import Masthead from '../components/masthead'
+
+const IndexPage = () => <Masthead />
 
 export default IndexPage

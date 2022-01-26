@@ -1,0 +1,10 @@
+.masthead {
+  background-image: radial-gradient(
+      118.67% 151.15% at 50.36% 64.8%,
+      var(--primary-alpha-30) 0%,
+      var(--dark-base-alpha-30) 86.46%
+    ),
+    linear-gradient(var(--dark-base) 0%, var(--grey-1) 95.87%);
+  height: 900px;
+  position: relative;
+}

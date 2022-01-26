@@ -1,5 +1,11 @@
 :root {
   /* COLOR PALETTE */
-  --color-bg: #fafafa;
+  --color-bg: #ffffff;
   --color-text: #191e29;
+  --dark-base: #191e29;
+  --dark-base-alpha-30: #191e29b3;
+  --primary-base: #01c38d;
+  --primary-alpha-30: #01c38db3;
+
+  --grey-1: #8c8e94;
 }
