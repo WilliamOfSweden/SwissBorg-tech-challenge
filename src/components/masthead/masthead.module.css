@@ -6,6 +6,7 @@
     ),
     linear-gradient(var(--dark-base) 0%, var(--grey-1) 95.87%);
   height: 900px;
+  padding-top: 11rem;
   position: relative;
 }
 
@@ -13,5 +14,11 @@
   color: var(--color-text-inverse);
   position: relative;
   text-align: center;
-  z-index: 10;
+  z-index: 2;
+}
+
+@media only screen and (min-width: 768px) {
+  .masthead {
+    padding-top: 15rem;
+  }
 }
