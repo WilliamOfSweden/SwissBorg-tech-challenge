@@ -9,6 +9,7 @@
 body {
   background: var(--color-bg);
   color: var(--color-text);
+  font-family: var(--font-body);
   line-height: 1.5;
   overflow-x: hidden;
   overflow-y: scroll;
@@ -16,4 +17,9 @@ body {
 
 #gatsby-focus-wrapper {
   overflow-x: hidden;
+}
+
+h1 {
+  font-size: 3.8rem;
+  font-weight: 600;
 }

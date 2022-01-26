@@ -7,5 +7,9 @@
   --primary-base: #01c38d;
   --primary-alpha-30: #01c38db3;
 
+  --color-text-inverse: #ffffff;
   --grey-1: #8c8e94;
+
+  /* FONTS */
+  --font-body: 'TTCommons', Sans-Serif;
 }

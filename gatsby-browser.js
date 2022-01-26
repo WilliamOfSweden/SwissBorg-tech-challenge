@@ -1,2 +1,6 @@
 import './src/styles/global.css'
 import './src/styles/fonts/index.css'
+import './src/styles/fonts/100.css'
+import './src/styles/fonts/200.css'
+import './src/styles/fonts/300.css'
+import './src/styles/fonts/600.css'
