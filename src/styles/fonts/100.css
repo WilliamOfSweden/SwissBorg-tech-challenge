@@ -1,0 +1,8 @@
+/* TTCommons-latin-100-thin*/
+@font-face {
+  font-family: 'TTCommons';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100;
+  src: url('./files/TTCommons-Thin.woff2') format('woff2');
+}

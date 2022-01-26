@@ -1,0 +1,8 @@
+/* TTCommons-latin-600-demi-bold*/
+@font-face {
+  font-family: 'TTCommons';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 600;
+  src: url('./files/TTCommons-DemiBold.woff2') format('woff2');
+}

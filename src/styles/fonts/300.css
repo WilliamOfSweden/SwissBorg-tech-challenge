@@ -1,0 +1,8 @@
+/* TTCommons-latin-300-light*/
+@font-face {
+  font-family: 'TTCommons';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 300;
+  src: url('./files/TTCommons-Light.woff2') format('woff2');
+}
