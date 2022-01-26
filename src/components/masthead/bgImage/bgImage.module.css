@@ -3,5 +3,6 @@
   left: 0;
   position: absolute !important;
   right: 0;
+  user-select: none;
   top: 0;
 }
