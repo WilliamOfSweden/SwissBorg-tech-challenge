@@ -8,44 +8,50 @@ import {
   SwissBorgBurnedIcon,
   SwissBorgPremiumIcon,
 } from '../../icons/'
+import { useFetchChsbMetricsQuery } from '../../../redux/features/swissBorgApi/swissBorgApiSlice'
 import ListItem from './listItem/'
 
-const StatsListContent = [
-  {
-    icon: <ChsbTokenIcon />,
-    stats: '128,338,928',
-    text: 'Remaining circulating supply',
-  },
-  {
-    additionalInfo: '(26.11% of Circulating supply)',
-    icon: <SwissBorgPremiumIcon />,
-    stats: '183,431,153',
-    text: 'CHSB in Premium accounts',
-  },
-  {
-    additionalInfo: '(54.06% of Circulating supply)',
-    icon: <ChsbYieldIcon />,
-    stats: '380,661,565',
-    text: 'CHSB in Yield Program',
-  },
-  {
-    icon: <SwissBorgBurnedIcon />,
-    stats: '10,564,614.29',
-    text: 'Circulating supply burned',
-  },
-  {
-    icon: <BuyBackIcon />,
-    stats: '942,260',
-    text: 'CHSB in buyback pool',
-  },
-]
+const StatsList = () => {
+  const { data, isFetching } = useFetchChsbMetricsQuery()
 
-const StatsList = () => (
-  <Fragment>
-    {StatsListContent.map(listItem => (
-      <ListItem content={listItem} key={uuidv4()} />
-    ))}
-  </Fragment>
-)
+  const StatsListContent = [
+    {
+      icon: <ChsbTokenIcon />,
+      stats: data?.chsbCirculatingSupplyTokens,
+      text: 'Remaining circulating supply',
+    },
+    {
+      additionalInfo: '(26.11% of Circulating supply)',
+      icon: <SwissBorgPremiumIcon />,
+      stats: data?.chsbStackedTokens,
+      text: 'CHSB in Premium accounts',
+    },
+    {
+      additionalInfo: '(54.06% of Circulating supply)',
+      icon: <ChsbYieldIcon />,
+      stats: data?.chsbYieldPledgedTokens,
+      text: 'CHSB in Yield Program',
+    },
+    {
+      icon: <SwissBorgBurnedIcon />,
+      stats: data?.chsbBurnedTokens,
+      text: 'Circulating supply burned',
+    },
+    {
+      icon: <BuyBackIcon />,
+      stats: data?.chsbBurnedTokens,
+      text: 'CHSB in buyback pool',
+    },
+  ]
+
+  console.log(data)
+  return (
+    <Fragment>
+      {StatsListContent.map(listItem => (
+        <ListItem content={listItem} key={uuidv4()} />
+      ))}
+    </Fragment>
+  )
+}
 
 export default StatsList

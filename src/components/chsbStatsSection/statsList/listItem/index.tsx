@@ -8,7 +8,7 @@ interface Props {
   content: {
     additionalInfo?: string
     icon: ReactNode
-    stats: string
+    stats?: number
     text: string
   }
 }
