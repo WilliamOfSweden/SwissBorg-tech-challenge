@@ -6,7 +6,7 @@ import InfoWrapper from './infoWrapper'
 
 interface Props {
   content: {
-    additionalInfo?: string
+    percentageString?: string
     icon: ReactNode
     stats?: number
     text: string
@@ -14,11 +14,11 @@ interface Props {
 }
 
 const ListItem = ({
-  content: { additionalInfo, icon, stats, text },
+  content: { percentageString, icon, stats, text },
 }: Props) => (
   <div className={listItemStyles.listItem}>
     <div className={listItemStyles.iconWrapper}>{icon}</div>
-    <StatsWrapper additionalInfo={additionalInfo} stats={stats} />
+    <StatsWrapper percentageString={percentageString} stats={stats} />
     <InfoWrapper text={text} />
   </div>
 )

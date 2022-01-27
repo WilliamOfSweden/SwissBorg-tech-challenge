@@ -1,18 +1,21 @@
 import React from 'react'
 
 import * as statsWrapperStyles from './statsWrapperStyles.module.css'
+import { getFormattedAmount } from '../../../../../utils/'
 
 interface Props {
-  additionalInfo?: string
+  percentageString?: string
   stats?: number
 }
 
-const StatsWrapper = ({ additionalInfo, stats }: Props) => {
+const StatsWrapper = ({ percentageString, stats }: Props) => {
+  const amount = stats && getFormattedAmount(stats)
+
   return (
     <div className={statsWrapperStyles.statsWrapper}>
-      <p className={statsWrapperStyles.mainStats}>{stats?.toString()}</p>
-      {additionalInfo && (
-        <p className={statsWrapperStyles.additionalStats}>{additionalInfo}</p>
+      <p className={statsWrapperStyles.mainStats}>{amount}</p>
+      {percentageString && (
+        <p className={statsWrapperStyles.additionalStats}>{percentageString}</p>
       )}
     </div>
   )

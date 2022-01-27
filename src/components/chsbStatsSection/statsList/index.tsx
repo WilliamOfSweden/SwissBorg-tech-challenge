@@ -9,6 +9,7 @@ import {
   SwissBorgPremiumIcon,
 } from '../../icons/'
 import { useFetchChsbMetricsQuery } from '../../../redux/features/swissBorgApi/swissBorgApiSlice'
+import { getPercentageString, getChsbInBuyBackPoolAmount } from '../../../utils'
 import ListItem from './listItem/'
 
 const StatsList = () => {
@@ -21,14 +22,24 @@ const StatsList = () => {
       text: 'Remaining circulating supply',
     },
     {
-      additionalInfo: '(26.11% of Circulating supply)',
       icon: <SwissBorgPremiumIcon />,
+      percentageString:
+        data &&
+        getPercentageString(
+          data.chsbStackedPercentage,
+          'of Circulating supply'
+        ),
       stats: data?.chsbStackedTokens,
       text: 'CHSB in Premium accounts',
     },
     {
-      additionalInfo: '(54.06% of Circulating supply)',
       icon: <ChsbYieldIcon />,
+      percentageString:
+        data &&
+        getPercentageString(
+          data.chsbInYieldPercentage,
+          'of Circulating supply'
+        ),
       stats: data?.chsbYieldPledgedTokens,
       text: 'CHSB in Yield Program',
     },
@@ -39,17 +50,17 @@ const StatsList = () => {
     },
     {
       icon: <BuyBackIcon />,
-      stats: data?.chsbBurnedTokens,
+      stats: data && getChsbInBuyBackPoolAmount(data),
       text: 'CHSB in buyback pool',
     },
   ]
 
-  console.log(data)
   return (
     <Fragment>
-      {StatsListContent.map(listItem => (
-        <ListItem content={listItem} key={uuidv4()} />
-      ))}
+      {!isFetching &&
+        StatsListContent.map(listItem => (
+          <ListItem content={listItem} key={uuidv4()} />
+        ))}
     </Fragment>
   )
 }
