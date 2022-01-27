@@ -1,5 +1,52 @@
 .chartContainer {
-  background: lightblue;
+  background: #eee;
   height: 280px;
   margin-bottom: 4rem;
+  width: 100%;
+}
+
+@media only screen and (min-width: 291px) {
+  .chartContainer {
+    height: 260px;
+  }
+}
+
+@media only screen and (min-width: 292px) {
+  .chartContainer {
+    height: 240px;
+  }
+}
+
+@media only screen and (min-width: 322px) {
+  .chartContainer {
+    height: 220px;
+  }
+}
+
+@media only screen and (min-width: 322px) {
+  .chartContainer {
+    height: 200px;
+  }
+}
+
+@media only screen and (min-width: 335px) {
+  .chartContainer {
+    height: 180px;
+  }
+}
+
+@media only screen and (min-width: 356px) {
+  .chartContainer {
+    height: 160px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .chartContainer {
+    grid-area: 1 / 8 / 6 / 13;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0fr;
+    height: 100%;
+    min-width: 345px;
+  }
 }

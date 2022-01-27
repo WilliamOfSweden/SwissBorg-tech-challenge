@@ -16,26 +16,26 @@ const StatsListContent = [
     text: 'Remaining circulating supply',
   },
   {
-    additionalInfo: '(26.05% of Circulating supply)',
+    additionalInfo: '(26.11% of Circulating supply)',
     icon: <SwissBorgPremiumIcon />,
     stats: '183,431,153',
-    text: 'CHSB staked',
+    text: 'CHSB in Premium accounts',
   },
   {
     additionalInfo: '(54.06% of Circulating supply)',
     icon: <ChsbYieldIcon />,
     stats: '380,661,565',
-    text: 'CHSB in Smart Yield',
+    text: 'CHSB in Yield Program',
   },
   {
     icon: <SwissBorgBurnedIcon />,
-    stats: '128,338,928',
+    stats: '10,564,614.29',
     text: 'Circulating supply burned',
   },
   {
     icon: <BuyBackIcon />,
-    stats: '128,338,928',
-    text: 'Circulating supply burned',
+    stats: '942,260',
+    text: 'CHSB in buyback pool',
   },
 ]
 

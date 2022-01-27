@@ -1,9 +1,8 @@
 import React, { ReactNode } from 'react'
+import InfoWrapper from './infoWrapper'
 
 import * as listItemStyles from './listItemStyles.module.css'
-import StatsColumn from './statsColumn/'
-import InfoColumn from './infoColumn'
-import AdditionalInfo from './additionalInfo/'
+import StatsWrapper from './statsWrapper'
 
 interface Props {
   content: {
@@ -19,13 +18,9 @@ const ListItem = ({
 }: Props) => {
   return (
     <div className={listItemStyles.listItem}>
-      <div style={{ paddingTop: '0.2rem' }}>{icon}</div>
-      <div style={{ marginLeft: '2.2rem' }}>
-        <StatsColumn stats={stats} />
-        {additionalInfo && <AdditionalInfo additionalInfo={additionalInfo} />}
-        <div style={{ height: '0.5rem' }} />
-        <InfoColumn text={text} />
-      </div>
+      <div className={listItemStyles.iconWrapper}>{icon}</div>
+      <StatsWrapper additionalInfo={additionalInfo} stats={stats} />
+      <InfoWrapper text={text} />
     </div>
   )
 }

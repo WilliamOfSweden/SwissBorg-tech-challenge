@@ -1,6 +1,23 @@
+.iconWrapper {
+  height: 5.2rem;
+  grid-area: span 2 / 1 / auto / 2;
+  width: 5rem;
+}
+
 .listItem {
   align-items: center;
   border-bottom: 1px solid rgba(143, 150, 161, 0.5);
-  display: flex;
+  display: grid;
+  gap: 0.5rem 2rem;
+  grid-column: span 4 / auto;
+  grid-template-columns: 5rem 1fr;
   padding: 1.6rem 0;
+}
+
+@media screen and (min-width: 768px) {
+  .listItem {
+    gap: 0 2rem;
+    grid-column: 1 / 8;
+    grid-template-rows: 1fr;
+  }
 }

@@ -1,0 +1,33 @@
+.additionalStats {
+  color: rgb(1, 195, 141);
+  font-size: 1.6rem;
+  line-height: 1.25em;
+}
+
+.mainStats {
+  color: var(--primary-base);
+  font-size: 2.4rem;
+  font-weight: 600 !important;
+  line-height: 3rem;
+}
+
+.statsWrapper {
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+@media only screen and (min-width: 768px) {
+  .additionalStats {
+    font-size: 2.2rem;
+    line-height: 3.2rem;
+  }
+
+  .mainStats {
+    font-size: 2.8rem;
+    line-height: 3.2rem;
+  }
+
+  .statsWrapper {
+    grid-area: 1 / 3 / 2 / 4;
+    text-align: right;
+  }
+}

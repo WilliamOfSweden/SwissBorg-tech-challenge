@@ -1,3 +1,19 @@
 .chsbStatsSection {
   padding-top: 6.992rem;
 }
+
+@media only screen and (min-width: 768px) {
+  .chsbStatsSection {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-top: 10rem;
+    margin-bottom: 10rem;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .chsbStatsSection {
+    column-gap: 2rem;
+    grid-template-columns: repeat(12, minmax(4rem, 1fr));
+  }
+}

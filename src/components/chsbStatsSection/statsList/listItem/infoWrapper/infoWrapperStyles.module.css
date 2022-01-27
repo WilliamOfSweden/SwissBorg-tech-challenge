@@ -1,0 +1,19 @@
+.infoWrapper {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.paragraph {
+  font-size: 1.6rem;
+  line-height: 1.25em;
+}
+
+@media only screen and (min-width: 768px) {
+  .infoWrapper {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+
+  .paragraph {
+    font-size: 2.8rem;
+    line-height: 3.2rem;
+  }
+}

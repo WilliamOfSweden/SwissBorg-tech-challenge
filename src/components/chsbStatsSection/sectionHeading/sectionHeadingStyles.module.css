@@ -3,3 +3,12 @@
   line-height: 3rem;
   margin-bottom: 3.992rem;
 }
+
+@media only screen and (min-width: 768px) {
+  .sectionHeading {
+    font-size: 3.6rem;
+    line-height: 4rem;
+    grid-column: 1 / 8;
+    margin: 2.988rem 0;
+  }
+}
