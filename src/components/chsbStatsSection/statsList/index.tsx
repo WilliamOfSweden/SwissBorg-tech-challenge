@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react'
+import { v4 as uuidv4 } from 'uuid'
 
 import {
   BuyBackIcon,
@@ -42,7 +43,7 @@ const StatsListContent = [
 const StatsList = () => (
   <Fragment>
     {StatsListContent.map(listItem => (
-      <ListItem content={listItem} />
+      <ListItem content={listItem} key={uuidv4()} />
     ))}
   </Fragment>
 )
