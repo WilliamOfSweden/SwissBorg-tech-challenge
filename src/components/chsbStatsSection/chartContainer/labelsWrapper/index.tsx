@@ -16,15 +16,15 @@ const LabelsWrapper = (props: Props) => (
     </li>
     <li>
       <span />
+      <p>In Buyback Pool</p>
+    </li>
+    <li>
+      <span />
       <p>In Yield Program</p>
     </li>
     <li>
       <span />
       <p>Circulating supply</p>
-    </li>
-    <li>
-      <span />
-      <p>In Buyback Pool</p>
     </li>
   </ul>
 )

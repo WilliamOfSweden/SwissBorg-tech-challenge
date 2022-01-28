@@ -33,21 +33,21 @@
 .labelsWrapper > li:nth-child(3) > span {
   background: linear-gradient(
     270deg,
+    rgb(122, 188, 255) 0%,
+    rgb(45, 149, 255) 94.83%
+  );
+}
+
+.labelsWrapper > li:nth-child(4) > span {
+  background: linear-gradient(
+    270deg,
     rgb(147, 115, 255) 0%,
     rgb(90, 63, 255) 94.83%
   );
 }
 
-.labelsWrapper > li:nth-child(4) > span {
-  background: rgb(204, 243, 232);
-}
-
 .labelsWrapper > li:nth-child(5) > span {
-  background: linear-gradient(
-    270deg,
-    rgb(122, 188, 255) 0%,
-    rgb(45, 149, 255) 94.83%
-  );
+  background: rgb(204, 243, 232);
 }
 
 .labelsWrapper > li > p {
@@ -71,31 +71,31 @@
   }
 
   .labelsWrapper > li:first-child {
-    left: 75%;
-    top: 16%;
+    left: 81.5%;
+    top: 21%;
   }
 
   .labelsWrapper > li:nth-child(2) {
-    left: 95%;
-    top: 52%;
+    left: 93.3%;
+    top: 36%;
     width: 10rem;
   }
 
   .labelsWrapper > li:nth-child(3) {
-    left: 90%;
-    max-width: 12rem;
-    top: 74%;
-    width: fit-content;
+    left: 97%;
+    top: 43%;
+    width: 12rem;
   }
 
   .labelsWrapper > li:nth-child(4) {
-    bottom: 5%;
-    left: 48%;
+    left: 82.5%;
+    max-width: 12rem;
+    top: 81.5%;
+    width: fit-content;
   }
 
   .labelsWrapper > li:nth-child(5) {
-    bottom: 30%;
-    left: 97%;
-    width: 12rem;
+    top: 12%;
+    left: 58%;
   }
 }

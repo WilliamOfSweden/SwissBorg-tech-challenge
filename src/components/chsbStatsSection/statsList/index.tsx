@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react'
 import { v4 as uuidv4 } from 'uuid'
 
+import { ChsbMetricsData } from '../../../@types/'
 import {
   BuyBackIcon,
   ChsbTokenIcon,
@@ -8,13 +9,15 @@ import {
   SwissBorgBurnedIcon,
   SwissBorgPremiumIcon,
 } from '../../icons/'
-import { useFetchChsbMetricsQuery } from '../../../redux/features/swissBorgApi/swissBorgApiSlice'
 import { getPercentageString, getChsbInBuyBackPoolAmount } from '../../../utils'
 import ListItem from './listItem/'
 
-const StatsList = () => {
-  const { data, isFetching } = useFetchChsbMetricsQuery()
+interface Props {
+  data?: ChsbMetricsData
+  isFetching: boolean
+}
 
+const StatsList = ({ data, isFetching }: Props) => {
   const StatsListContent = [
     {
       icon: <ChsbTokenIcon />,
