@@ -2,31 +2,25 @@ import React from 'react'
 
 import * as labelsWrapperStyles from './labelsWrapperStyles.module.css'
 
-type Props = {}
+const LabelsWrapper = () => {
+  const labels = [
+    'In Premium accounts',
+    'Burned',
+    'In Buyback Pool',
+    'In Yield Program',
+    'Circulating supply',
+  ]
 
-const LabelsWrapper = (props: Props) => (
-  <ul className={labelsWrapperStyles.labelsWrapper}>
-    <li>
-      <span />
-      <p>In Premium accounts</p>
-    </li>
-    <li>
-      <span />
-      <p>Burned</p>
-    </li>
-    <li>
-      <span />
-      <p>In Buyback Pool</p>
-    </li>
-    <li>
-      <span />
-      <p>In Yield Program</p>
-    </li>
-    <li>
-      <span />
-      <p>Circulating supply</p>
-    </li>
-  </ul>
-)
+  return (
+    <ul className={labelsWrapperStyles.labelsWrapper}>
+      {labels.map(label => (
+        <li>
+          <span />
+          <p>{label}</p>
+        </li>
+      ))}
+    </ul>
+  )
+}
 
 export default LabelsWrapper
