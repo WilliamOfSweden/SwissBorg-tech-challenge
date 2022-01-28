@@ -12,5 +12,6 @@
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 0fr;
     height: 100%;
+    margin-bottom: 0;
   }
 }
