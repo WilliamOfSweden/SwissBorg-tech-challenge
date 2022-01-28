@@ -1,0 +1,19 @@
+.doughnutChart {
+  color: rgb(25, 30, 41);
+  filter: drop-shadow(rgba(0, 0, 0, 0.3) -2px 0px 2px);
+  place-self: center;
+  overflow: hidden;
+  width: 15rem;
+}
+
+.doughnutChart > circle {
+  fill: none;
+  transform-origin: center center;
+  transition: all 0.5s ease 0s;
+}
+
+@media screen and (min-width: 768px) {
+  .doughnutChart {
+    width: 34.5rem;
+  }
+}
