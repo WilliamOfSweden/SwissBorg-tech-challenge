@@ -1,0 +1,78 @@
+.flagsWrapper {
+  background: #11111133;
+  border-top-left-radius: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
+  position: relative;
+  width: 12rem;
+}
+
+.flagsWrapper > svg:nth-child(2) {
+  left: 5.1rem;
+  position: absolute;
+  top: 2.7rem;
+  z-index: 2;
+}
+
+.priceLabel {
+  background: #11111133;
+  padding-bottom: 1.5rem;
+  text-align: center;
+  width: 12rem;
+}
+
+.priceLabel > p:first-child {
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+.priceLabel > p:nth-child(2) {
+  color: #019c71;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+@media screen and (min-width: 1000px) {
+  .flagsWrapper {
+    background: none;
+    width: unset;
+  }
+
+  .flagsWrapper > svg:first-child {
+    margin-right: 0.5rem;
+  }
+
+  .flagsWrapper > svg:nth-child(odd) {
+    height: 5.6rem;
+  }
+
+  .flagsWrapper > svg:nth-child(2) {
+    left: 6.35rem;
+    top: 3.5rem;
+  }
+
+  .header {
+    align-items: center;
+    background: #50505088;
+    border-bottom: 1px solid #aaaaaa;
+    display: flex;
+  }
+
+  .priceLabel {
+    background: none;
+    padding-bottom: 0;
+    text-align: left;
+    width: auto;
+  }
+
+  .priceLabel > p:first-child {
+    font-size: 2.8rem;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+
+  .priceLabel > p:nth-child(2) {
+    font-size: 1.7rem;
+  }
+}

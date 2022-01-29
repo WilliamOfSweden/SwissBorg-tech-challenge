@@ -1,13 +1,15 @@
 import React from 'react'
 
 import * as tradingViewStyles from './tradingView.module.css'
-import TopBar from './topBar/'
+import TradingViewHeader from './tradingViewHeader/'
 import ChartWrapper from './chartWrapper/'
+import TradingViewFooter from './tradingViewFooter/'
 
 const TradingView = () => (
   <div className={tradingViewStyles.wrapper}>
-    <TopBar />
+    <TradingViewHeader />
     <ChartWrapper />
+    <TradingViewFooter />
   </div>
 )
 

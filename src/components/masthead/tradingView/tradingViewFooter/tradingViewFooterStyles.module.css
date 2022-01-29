@@ -1,0 +1,16 @@
+.footer {
+  background: #11111133;
+  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+  color: #dddddd;
+  font-size: 1.7rem;
+  font-weight: 300;
+  padding: 1rem 1rem 0.7rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 1000px) {
+  .footer {
+    background: #50505088;
+  }
+}

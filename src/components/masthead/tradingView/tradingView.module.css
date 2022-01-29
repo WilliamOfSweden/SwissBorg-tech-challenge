@@ -1,6 +1,8 @@
 .wrapper {
   background: #00000066;
   border-radius: 1.5rem;
+  display: flex;
+  flex-direction: column;
   height: 40rem;
 }
 

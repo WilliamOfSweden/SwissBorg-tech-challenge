@@ -1,0 +1,23 @@
+.chartWrapper {
+  flex-grow: 1;
+  height: 100%;
+  overflow: hidden;
+}
+
+.chartWrapper > div {
+  height: 100%;
+}
+
+.chartWrapper > div > div > div > svg > g:nth-child(2) {
+  /* position: absolute !important;
+  left: 20rem; */
+  transform: translate(92%, 0) !important;
+  /* opacity: 0.2 !important; */
+  /* position: absolute !important; */
+}
+
+@media screen and (min-width: 1000px) {
+  .chartWrapper > div > div > div > svg > g:nth-child(2) {
+    transform: translate(97.5%, 0) !important;
+  }
+}
