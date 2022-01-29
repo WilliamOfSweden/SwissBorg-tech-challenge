@@ -1,10 +1,11 @@
 .wrapper {
-  background: #000;
-  height: 400px;
+  background: #00000066;
+  border-radius: 1.5rem;
+  height: 40rem;
 }
 
 @media screen and (min-width: 1440px) {
   .wrapper {
-    height: 500px;
+    height: 50rem;
   }
 }

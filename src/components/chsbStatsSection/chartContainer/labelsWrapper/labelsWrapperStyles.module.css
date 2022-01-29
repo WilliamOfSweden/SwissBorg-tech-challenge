@@ -73,6 +73,7 @@
   .labelsWrapper > li:first-child {
     left: 81.5%;
     top: 21%;
+    width: 10rem;
   }
 
   .labelsWrapper > li:nth-child(2) {
