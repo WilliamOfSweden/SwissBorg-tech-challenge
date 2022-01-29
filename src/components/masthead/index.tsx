@@ -3,7 +3,7 @@ import React from 'react'
 import * as mastheadStyles from './masthead.module.css'
 import Heading from './heading/'
 import Subheading from './subheading/'
-import TradingView from './tradingView/'
+import ChsbPriceChart from './chsbPriceChart'
 import BgImage from './bgImage/'
 
 const Masthead = () => (
@@ -11,7 +11,7 @@ const Masthead = () => (
     <div className={`${mastheadStyles.wrapper} container`}>
       <Heading />
       <Subheading />
-      <TradingView />
+      <ChsbPriceChart />
     </div>
     <BgImage />
   </section>

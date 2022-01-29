@@ -1,7 +1,7 @@
 import React from 'react'
 
 import * as tradingViewHeaderStyles from './tradingViewHeaderStyles.module.css'
-import { ArrowIcon, ChsbToken, UsFlag } from '../../../icons/'
+import { ArrowIcon, ChsbToken, UsFlag } from '../../../icons'
 
 const TopBar = () => (
   <header className={tradingViewHeaderStyles.header}>

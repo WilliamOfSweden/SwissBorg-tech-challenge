@@ -5,7 +5,7 @@
       var(--dark-base-alpha-30) 86.46%
     ),
     linear-gradient(var(--dark-base) 0%, var(--grey-1) 95.87%);
-  min-height: 100vh;
+  min-height: calc(100vh - 6rem);
   padding-bottom: 5rem;
   padding-top: 11rem;
   position: relative;
