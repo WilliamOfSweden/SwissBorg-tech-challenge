@@ -64,7 +64,7 @@ const SEO = ({ description, title }: Props) => {
       <meta name='twitter:title' content={twitterTitle} />
       <meta name='twitter:description' content={twitterDescription} />
       <meta name='twitter:url' content={siteUrl} />
-      <meta name='twitter:image' content={'banner.jpg'} />
+      <meta property='twitter:image' content={ogImageUrl} />
     </Helmet>
   )
 }
