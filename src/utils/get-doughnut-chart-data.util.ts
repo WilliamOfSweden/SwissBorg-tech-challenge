@@ -47,14 +47,12 @@ export const getDoughnutChartData = (data: ChsbMetricsData) => {
     },
   ]
 
-  // map(function(element, index, array) { /* ... */ }, thisArg)
-
   const doughnutChartDataWithRotation = doughnutChartData.map(
     (element, index, array) => {
       element.rotation =
         index === 0
           ? -90
-          : array[index - 1].rotation + array[index - 1].percentage * 360
+          : array[index - 1].rotation! + array[index - 1].percentage * 360
 
       return element
     }
