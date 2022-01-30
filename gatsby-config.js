@@ -10,7 +10,7 @@ module.exports = {
     siteTitle: 'CHSB token live performance and metrics | SwissBorg',
     siteUrl: 'https://sbtc.netlify.app',
     twitterCard: 'summary_large_image',
-    twitterCreator: 'SwissBorg',
+    twitterCreator: '@SwissBorg',
     twitterTitle: 'CHSB token live performance and metrics | SwissBorg',
     twitterDescription:
       'Deep-dive into the statistics of CHSB and understand the mechanics of the full SwissBorg ecosystem.',

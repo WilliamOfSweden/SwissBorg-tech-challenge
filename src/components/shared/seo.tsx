@@ -57,11 +57,14 @@ const SEO = ({ description, title }: Props) => {
       <meta property='og:type' content={ogType} />
       <meta property='og:title' content={ogTitle} />
       <meta property='og:url' content={siteUrl} />
+      <meta property='og:see_also' content='https://twitter.com/swissborg' />
 
-      <meta property='twitter:card' content={twitterCard} />
-      <meta property='twitter:creator' content={twitterCreator} />
-      <meta property='twitter:title' content={twitterTitle} />
-      <meta property='twitter:description' content={twitterDescription} />
+      <meta name='twitter:card' content={twitterCard} />
+      <meta name='twitter:creator' content={twitterCreator} />
+      <meta name='twitter:title' content={twitterTitle} />
+      <meta name='twitter:description' content={twitterDescription} />
+      <meta name='twitter:url' content={siteUrl} />
+      <meta name='twitter:image' content={'banner.jpg'} />
     </Helmet>
   )
 }
