@@ -15,6 +15,11 @@
   z-index: 2;
 }
 
+.header {
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+}
+
 .priceLabel {
   background: #11111133;
   padding-bottom: 1.5rem;
