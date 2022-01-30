@@ -6,7 +6,7 @@
     ),
     linear-gradient(var(--dark-base) 0%, var(--grey-1) 95.87%);
   min-height: calc(100vh - 6rem);
-  padding-bottom: 5rem;
+  padding-bottom: 6.7rem;
   padding-top: 11rem;
   position: relative;
 }
@@ -17,11 +17,29 @@
   z-index: 2;
 }
 
+@media only screen and (min-width: 300px) {
+  .masthead {
+    padding-bottom: 9.3rem;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .masthead {
     max-height: 96rem;
     min-height: unset;
     padding-bottom: 10rem;
     padding-top: 15rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .masthead {
+    padding-bottom: 11.6rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .masthead {
+    padding-bottom: 8rem;
   }
 }
