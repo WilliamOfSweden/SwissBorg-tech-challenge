@@ -1,13 +1,17 @@
 import { configureStore } from '@reduxjs/toolkit'
 
-import { apiSlice } from '../features/swissBorgApi/swissBorgApiSlice'
+import { swissBorgApiSlice } from '../features/apis/swissBorgApiSlice'
+import { coinGeckoApiSlice } from '../features/apis/coinGeckoApiSlice'
 
 export const store = configureStore({
   reducer: {
-    [apiSlice.reducerPath]: apiSlice.reducer,
+    [swissBorgApiSlice.reducerPath]: swissBorgApiSlice.reducer,
+    [coinGeckoApiSlice.reducerPath]: coinGeckoApiSlice.reducer,
   },
   middleware: getDefaultMiddleware => {
-    return getDefaultMiddleware().concat(apiSlice.middleware)
+    return getDefaultMiddleware()
+      .concat(swissBorgApiSlice.middleware)
+      .concat(coinGeckoApiSlice.middleware)
   },
 })
 

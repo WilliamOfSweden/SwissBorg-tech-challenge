@@ -1,8 +1,8 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
-import { ChsbMetricsData, ChsbPriceMonthData } from '../../../@types/'
+import { ChsbMetricsData, ChsbPriceMonthData } from '../../../@types'
 
-export const apiSlice = createApi({
-  reducerPath: 'api',
+export const swissBorgApiSlice = createApi({
+  reducerPath: 'swissBorgApi',
   baseQuery: fetchBaseQuery({
     baseUrl: 'https://chsb.my-test-domain.website',
   }),
@@ -23,4 +23,4 @@ export const apiSlice = createApi({
 })
 
 export const { useFetchChsbMetricsQuery, useFetchChsbPriceMonthQuery } =
-  apiSlice
+  swissBorgApiSlice

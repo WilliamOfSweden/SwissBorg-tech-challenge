@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { useFetchChsbMetricsQuery } from '../../redux/features/swissBorgApi/swissBorgApiSlice'
+import { useFetchChsbMetricsQuery } from '../../redux/features/apis/swissBorgApiSlice'
 import * as chsbStatsSectionStyles from './chsbStatsSectionStyles.module.css'
 import SectionHeading from './sectionHeading/'
 import ChartContainer from './chartContainer/'
