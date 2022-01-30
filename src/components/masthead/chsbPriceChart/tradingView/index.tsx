@@ -1,26 +1,27 @@
-import React from 'react'
+import React, { Fragment, useState, useEffect, Suspense, lazy } from 'react'
 
 import * as chartWrapperStyles from './chartWrapperStyles.module.css'
-import { SymbolOverview } from 'react-ts-tradingview-widgets'
+const TradingViewChart = lazy(() => import('./tradingViewChart'))
 
-const TradingView = () => (
-  <div className={chartWrapperStyles.chartWrapper} id='chart'>
-    <SymbolOverview
-      autosize
-      bottomColor='#01c38d00'
-      chartOnly
-      chartType='area'
-      colorTheme='dark'
-      container_id='chart'
-      gridLineColor='#666666'
-      isTransparent
-      lineColor='#01c38d'
-      symbols={[['CHSBUSD']]}
-      topColor='#01c38d66'
-      fontColor='#ffffff'
-      scaleMode='Logarithmic'
-    />
-  </div>
-)
+const TradingView = () => {
+  const [isMounted, setIsMounted] = useState(false)
+
+  useEffect(() => {
+    setIsMounted(true)
+  }, [])
+
+  return (
+    <Fragment>
+      {!isMounted && <div className={chartWrapperStyles.chartWrapper} />}
+      {!isMounted ? null : (
+        <Suspense
+          fallback={<div className={chartWrapperStyles.chartWrapper} />}
+        >
+          <TradingViewChart />
+        </Suspense>
+      )}
+    </Fragment>
+  )
+}
 
 export default TradingView
