@@ -6,6 +6,10 @@
   grid-area: 1 / 2 / 2 / 3;
 }
 
+.skeleton > svg {
+  border-radius: 0.2rem;
+}
+
 .skeleton > svg:first-child {
   height: 2.8rem;
   margin-bottom: 0.2rem;
