@@ -12,13 +12,17 @@ const PriceLabel = () => {
     return <PriceLabelSkeleton />
   }
 
-  const formattedData = data && getFormattedChartHeaderData(data)
+  const formattedData = data?.swissborg && getFormattedChartHeaderData(data)
+
+  if (!formattedData) {
+    return null
+  }
 
   return (
     <div className={priceLabelStyles.priceLabel}>
-      <p>{data && formattedData?.price}</p>
+      <p>{formattedData && formattedData?.price}</p>
       <p style={{ color: formattedData?.deltaColor }}>
-        {data && formattedData?.deltaInPrecent}
+        {formattedData && formattedData?.deltaInPrecent}
       </p>
     </div>
   )
