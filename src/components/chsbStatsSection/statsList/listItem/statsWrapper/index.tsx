@@ -2,13 +2,19 @@ import React from 'react'
 
 import * as statsWrapperStyles from './statsWrapperStyles.module.css'
 import { getFormattedAmount } from '../../../../../utils/'
+import StatsWrapperSkeleton from './statsWrapperSkeleton/'
 
 interface Props {
+  isFetching: boolean
   percentageString?: string
   stats?: number
 }
 
-const StatsWrapper = ({ percentageString, stats }: Props) => {
+const StatsWrapper = ({ isFetching, percentageString, stats }: Props) => {
+  if (isFetching) {
+    return <StatsWrapperSkeleton twoLines={percentageString !== undefined} />
+  }
+
   const amount = stats && getFormattedAmount(stats)
 
   return (

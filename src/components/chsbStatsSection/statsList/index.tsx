@@ -26,23 +26,19 @@ const StatsList = ({ data, isFetching }: Props) => {
     },
     {
       icon: <SwissBorgPremiumIcon />,
-      percentageString:
-        data &&
-        getPercentageString(
-          data.chsbStackedPercentage,
-          'of Circulating supply'
-        ),
+      percentageString: getPercentageString(
+        data?.chsbStackedPercentage,
+        'of Circulating supply'
+      ),
       stats: data?.chsbStackedTokens,
       text: 'CHSB in Premium accounts',
     },
     {
       icon: <ChsbYieldIcon />,
-      percentageString:
-        data &&
-        getPercentageString(
-          data.chsbInYieldPercentage,
-          'of Circulating supply'
-        ),
+      percentageString: getPercentageString(
+        data?.chsbInYieldPercentage,
+        'of Circulating supply'
+      ),
       stats: data?.chsbYieldPledgedTokens,
       text: 'CHSB in Yield Program',
     },
@@ -60,10 +56,9 @@ const StatsList = ({ data, isFetching }: Props) => {
 
   return (
     <Fragment>
-      {!isFetching &&
-        StatsListContent.map(listItem => (
-          <ListItem content={listItem} key={uuidv4()} />
-        ))}
+      {StatsListContent.map(listItem => (
+        <ListItem content={listItem} isFetching={isFetching} key={uuidv4()} />
+      ))}
     </Fragment>
   )
 }

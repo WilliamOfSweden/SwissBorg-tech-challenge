@@ -11,14 +11,20 @@ interface Props {
     stats?: number
     text: string
   }
+  isFetching: boolean
 }
 
 const ListItem = ({
   content: { percentageString, icon, stats, text },
+  isFetching,
 }: Props) => (
   <div className={listItemStyles.listItem}>
     <div className={listItemStyles.iconWrapper}>{icon}</div>
-    <StatsWrapper percentageString={percentageString} stats={stats} />
+    <StatsWrapper
+      isFetching={isFetching}
+      percentageString={percentageString}
+      stats={stats}
+    />
     <InfoWrapper text={text} />
   </div>
 )

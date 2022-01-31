@@ -1,0 +1,59 @@
+.skeleton {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.skeleton > svg:first-child {
+  height: 2.8rem;
+  margin-bottom: 0.2rem;
+  width: 12rem;
+}
+
+.skeleton > svg:nth-child(2),
+.skeleton > svg:nth-child(3) {
+  height: 1.6rem;
+}
+
+@media only screen and (min-width: 282px) {
+  .skeleton > svg:nth-child(3) {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .skeleton {
+    align-items: flex-end;
+    grid-area: 1 / 3 / 2 / 4;
+    text-align: right;
+  }
+
+  .skeleton > svg:first-child {
+    height: 3rem;
+  }
+
+  .skeleton > svg:nth-child(2),
+  .skeleton > svg:nth-child(3) {
+    height: 2.8rem;
+  }
+
+  .skeleton > svg:nth-child(3) {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 817px) {
+  .skeleton > svg:first-child {
+    width: 14rem;
+  }
+
+  .skeleton > svg:nth-child(2) {
+    width: 25rem;
+  }
+
+  .skeleton > svg:nth-child(3) {
+    display: none;
+  }
+}
