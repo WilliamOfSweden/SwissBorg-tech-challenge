@@ -1,4 +1,5 @@
 import React from 'react'
+import { v4 as uuidv4 } from 'uuid'
 
 import { ChsbMetricsData } from '../../../../@types/'
 import { getDoughnutChartData } from '../../../../utils'
@@ -22,7 +23,9 @@ const DoughnutChart = ({ data, isFetching }: Props) => {
     >
       <SvgDefinitions />
       {segmentData &&
-        segmentData.map(segment => <Segment segmentData={segment} />)}
+        segmentData.map(segment => (
+          <Segment key={uuidv4()} segmentData={segment} />
+        ))}
     </svg>
   )
 }
