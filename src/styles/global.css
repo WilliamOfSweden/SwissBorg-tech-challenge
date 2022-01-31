@@ -34,3 +34,25 @@ h1 {
     width: min(1180px, 100% - 6rem);
   }
 }
+
+.headroom-wrapper {
+  position: absolute !important;
+  top: 0;
+  width: 100%;
+  z-index: 999 !important;
+}
+
+.headroom-wrapper svg > g > path:last-child {
+  fill: #ffffff;
+}
+
+.headrom--scrolled,
+.headroom--pinned {
+  background: #ffffff !important;
+  z-index: 50 !important;
+}
+
+.headrom--scrolled svg > g > path:last-child,
+.headroom--pinned svg > g > path:last-child {
+  fill: #000000;
+}

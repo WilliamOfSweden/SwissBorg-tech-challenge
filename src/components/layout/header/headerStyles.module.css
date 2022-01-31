@@ -1,0 +1,23 @@
+.header {
+  align-items: center;
+  box-shadow: rgb(0 0 0 / 20%) 0px 0px 5px 0px;
+  display: flex;
+  height: 5.6rem;
+  /* position: fixed; */
+  width: 100%;
+  z-index: 100;
+}
+
+.header > div > svg {
+  width: 14rem;
+}
+
+@media screen and (min-width: 1025px) {
+  .header {
+    height: 9rem;
+  }
+
+  .header > div > svg {
+    width: 20rem;
+  }
+}
