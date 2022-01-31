@@ -6,9 +6,9 @@
   --dark-base-alpha-30: #191e29b3;
   --primary-base: #01c38d;
   --primary-alpha-30: #01c38db3;
-
   --color-text-inverse: #ffffff;
   --grey-1: #8c8e94;
+  --warning: #ff8d00;
 
   /* FONTS */
   --font-body: 'TTCommons', Sans-Serif;

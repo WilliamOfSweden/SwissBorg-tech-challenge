@@ -13,7 +13,7 @@ interface Props {
 const ChartContainer = ({ data, isFetching }: Props) => (
   <div className={chartContainerStyles.wrapper}>
     <DoughnutChart data={data} isFetching={isFetching} />
-    <LabelsWrapper />
+    {data && <LabelsWrapper />}
   </div>
 )
 

@@ -1,0 +1,13 @@
+.errorMessage {
+  color: var(--warning);
+  font-size: 1.2rem;
+  font-weight: 600 !important;
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .emptyState {
+    grid-area: 1 / 3 / 2 / 4;
+    text-align: right;
+  }
+}

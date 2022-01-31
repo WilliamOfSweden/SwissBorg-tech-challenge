@@ -1,6 +1,7 @@
 import React from 'react'
 import { v4 as uuidv4 } from 'uuid'
 
+import DoughnutChartSkeleton from './doughnutChartSkeleton/'
 import { ChsbMetricsData } from '../../../../@types/'
 import { getDoughnutChartData } from '../../../../utils'
 import SvgDefinitions from './svgDefinitions'
@@ -13,7 +14,11 @@ interface Props {
 }
 
 const DoughnutChart = ({ data, isFetching }: Props) => {
-  const segmentData = data && getDoughnutChartData(data!)
+  if (isFetching || !data) {
+    return <DoughnutChartSkeleton />
+  }
+
+  const segmentData = getDoughnutChartData(data!)
 
   return (
     <svg
@@ -22,10 +27,9 @@ const DoughnutChart = ({ data, isFetching }: Props) => {
       xmlns='http://www.w3.org/2000/svg'
     >
       <SvgDefinitions />
-      {segmentData &&
-        segmentData.map(segment => (
-          <Segment key={uuidv4()} segmentData={segment} />
-        ))}
+      {segmentData.map(segment => (
+        <Segment key={uuidv4()} segmentData={segment} />
+      ))}
     </svg>
   )
 }
