@@ -1,4 +1,4 @@
-import React, { Fragment, useState, useEffect, Suspense, lazy } from 'react'
+import React, { Fragment, lazy, Suspense, useEffect, useState } from 'react'
 
 import * as chartWrapperStyles from './chartWrapperStyles.module.css'
 const TradingViewChart = lazy(() => import('./tradingViewChart'))
@@ -12,8 +12,9 @@ const TradingView = () => {
 
   return (
     <Fragment>
-      {!isMounted && <div className={chartWrapperStyles.chartWrapper} />}
-      {!isMounted ? null : (
+      {!isMounted ? (
+        <div className={chartWrapperStyles.chartWrapper} />
+      ) : (
         <Suspense
           fallback={<div className={chartWrapperStyles.chartWrapper} />}
         >

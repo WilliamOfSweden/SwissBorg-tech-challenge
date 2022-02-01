@@ -17,7 +17,6 @@ const Segment = ({
     fill='transparent'
     opacity='1'
     r='60'
-    // stroke="url('#circulating-gradient')"
     stroke={color}
     strokeDasharray={`${strokeDasharray} 1880`}
     strokeWidth='20'

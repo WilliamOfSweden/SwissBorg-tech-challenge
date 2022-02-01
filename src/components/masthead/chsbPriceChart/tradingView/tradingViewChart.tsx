@@ -13,12 +13,12 @@ const TradingViewChart = () => (
         chartType='area'
         colorTheme='dark'
         container_id='chart'
+        fontColor='#ffffff'
         gridLineColor='#666666'
         isTransparent
         lineColor='#01c38d'
         symbols={[['CHSBUSD']]}
         topColor='#01c38d66'
-        fontColor='#ffffff'
         scaleMode='Logarithmic'
       />
     </div>

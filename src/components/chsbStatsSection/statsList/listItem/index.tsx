@@ -1,8 +1,8 @@
 import React, { ReactNode } from 'react'
 
 import * as listItemStyles from './listItemStyles.module.css'
-import StatsWrapper from './statsWrapper'
-import InfoWrapper from './infoWrapper'
+import StatsWrapper from './statsWrapper/'
+import InfoWrapper from './infoWrapper/'
 
 interface Props {
   content: {

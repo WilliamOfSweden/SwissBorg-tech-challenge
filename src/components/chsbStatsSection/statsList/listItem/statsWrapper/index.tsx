@@ -2,7 +2,7 @@ import React from 'react'
 
 import * as statsWrapperStyles from './statsWrapperStyles.module.css'
 import StatsWrapperSkeleton from './statsWrapperSkeleton/'
-import StatsWrapperEmptyState from './statsWrapperEmptyState'
+import StatsWrapperEmptyState from './statsWrapperEmptyState/'
 import { getFormattedAmount } from '../../../../../utils/'
 
 interface Props {

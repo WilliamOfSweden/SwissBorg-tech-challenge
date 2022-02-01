@@ -9,7 +9,10 @@ import {
   SwissBorgBurnedIcon,
   SwissBorgPremiumIcon,
 } from '../../icons/'
-import { getPercentageString, getChsbInBuyBackPoolAmount } from '../../../utils'
+import {
+  getPercentageString,
+  getChsbInBuyBackPoolAmount,
+} from '../../../utils/'
 import ListItem from './listItem/'
 
 interface Props {

@@ -1,11 +1,11 @@
 import React from 'react'
 import { v4 as uuidv4 } from 'uuid'
 
-import DoughnutChartSkeleton from './doughnutChartSkeleton/'
 import { ChsbMetricsData } from '../../../../@types/'
-import { getDoughnutChartData } from '../../../../utils'
-import SvgDefinitions from './svgDefinitions'
+import DoughnutChartSkeleton from './doughnutChartSkeleton/'
+import { getDoughnutChartData } from '../../../../utils/'
 import * as doughnutChartStyles from './doughnutChartStyles.module.css'
+import SvgDefinitions from './svgDefinitions'
 import Segment from './segment'
 
 interface Props {
