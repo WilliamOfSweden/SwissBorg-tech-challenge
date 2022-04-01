@@ -14,7 +14,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@reduxjs/toolkit": "1.8.0",
+    "@reduxjs/toolkit": "1.8.1",
     "gatsby": "4.11.1",
     "gatsby-plugin-image": "2.11.1",
     "gatsby-plugin-react-helmet": "5.11.0",
