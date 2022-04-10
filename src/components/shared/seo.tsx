@@ -45,7 +45,6 @@ const SEO = ({ description, title }: Props) => {
   return (
     <Helmet>
       <html lang='en-GB' />
-      <meta charSet='UTF-8' />
       <meta
         name='description'
         content={description ? description : siteDescription}
