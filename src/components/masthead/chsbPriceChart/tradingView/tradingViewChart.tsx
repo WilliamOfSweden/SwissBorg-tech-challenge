@@ -17,9 +17,9 @@ const TradingViewChart = () => (
         gridLineColor='#666666'
         isTransparent
         lineColor='#01c38d'
+        scaleMode='Logarithmic'
         symbols={[['CHSBUSD']]}
         topColor='#01c38d66'
-        scaleMode='Logarithmic'
       />
     </div>
   </div>
