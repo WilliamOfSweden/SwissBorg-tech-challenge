@@ -10,18 +10,14 @@ const TradingView = () => {
     setIsMounted(true)
   }, [])
 
+  if (!isMounted) {
+    return <div className={chartWrapperStyles.chartWrapper} />
+  }
+
   return (
-    <Fragment>
-      {!isMounted ? (
-        <div className={chartWrapperStyles.chartWrapper} />
-      ) : (
-        <Suspense
-          fallback={<div className={chartWrapperStyles.chartWrapper} />}
-        >
-          <TradingViewChart />
-        </Suspense>
-      )}
-    </Fragment>
+    <Suspense fallback={<div className={chartWrapperStyles.chartWrapper} />}>
+      <TradingViewChart />
+    </Suspense>
   )
 }
 
