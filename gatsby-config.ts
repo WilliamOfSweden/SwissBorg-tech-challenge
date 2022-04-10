@@ -1,4 +1,6 @@
-module.exports = {
+import { GatsbyConfig } from 'gatsby'
+
+const gatsbyConfig: GatsbyConfig = {
   siteMetadata: {
     ogDescription:
       'Deep-dive into the statistics of CHSB and understand the mechanics of the full SwissBorg ecosystem.',
@@ -36,3 +38,5 @@ module.exports = {
     'gatsby-transformer-sharp',
   ],
 }
+
+export default gatsbyConfig
