@@ -10077,10 +10077,10 @@ react-side-effect@^2.1.0:
   resolved "https://registry.yarnpkg.com/react-side-effect/-/react-side-effect-2.1.1.tgz#66c5701c3e7560ab4822a4ee2742dee215d72eb3"
   integrity sha512-2FoTQzRNTncBVtnzxFOk2mCpcfxQpenBMbk5kSVBg5UcPqV9fRbgY2zhb7GTWWOlpFmAxhClBDlIq8Rsubz1yQ==
 
-react-ts-tradingview-widgets@1.0.9:
-  version "1.0.9"
-  resolved "https://registry.yarnpkg.com/react-ts-tradingview-widgets/-/react-ts-tradingview-widgets-1.0.9.tgz#dfed308b65559269244053d22a1200bf3f595e7d"
-  integrity sha512-Wx9BS3S3e2ztUUrpSFVvoXskqi9AZ8vmUQyEYhaVtoMgQVWnRwBv+gI8XrHD786bAUVoYZujaq7hISEy/I1aJA==
+react-ts-tradingview-widgets@1.0.10:
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/react-ts-tradingview-widgets/-/react-ts-tradingview-widgets-1.0.10.tgz#100ffcf30e47bc536efc9a18bd4726f7a49ac7ac"
+  integrity sha512-RTqV/fHsXPSeQ4Rq101/Je3BbNmPFJA6uVBN25D9mZtROBF9Y02K7xmnrwxKQJzt+Ej76edKYNC568nAToVYZw==
 
 react@18.0.0:
   version "18.0.0"
