@@ -5,4 +5,4 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/ed92558d-ead3-45be-bef5-11ff6730bd43/deploy-status)](https://app.netlify.com/sites/sbtc/deploys)
 
-My solution to [SwissBorg](https://swissborg.com)'s tech challenge in relation to the recruitment process for a Web Developer position.
+My solution to [SwissBorg](https://swissborg.com)'s tech challenge as part of to the recruitment process for a Web Developer position.
